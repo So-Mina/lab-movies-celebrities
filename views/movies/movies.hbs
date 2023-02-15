@@ -1,0 +1,25 @@
+<section>
+
+  {{#each movies}}
+
+    <div class='card'>
+      <p><a href="/movies/{{_id}}">{{title}}</a></p>
+          <hr>
+      <p>{{genre}}</p>
+      <p>{{plot}}</p>
+      
+      <ul>
+        {{#each cast}}
+          <li>{{this.name}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+  {{/each}}
+
+  <div class="links">
+    <a href="/">Back home</a>
+    <a href="/movies/create">Add new movie</a>
+  </div>
+
+</section>

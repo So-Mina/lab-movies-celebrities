@@ -1,0 +1,40 @@
+<section>
+
+  <div class="movie-details">
+    <h2>{{movie.title}}</h2>
+        <hr>
+      <p>Genre: {{movie.genre}}</p>
+      <p>Plot: {{movie.plot}}</p>
+  </div>
+
+  <div class="cast-details">
+    <h3>Cast</h3>
+        <hr>
+      <ul>
+        {{#each movie.cast}}
+          <li>
+            <h4>{{name}}</h4>
+              <p>Occupation: {{occupation}}</p>
+              <p>CatchPhrase: {{catchPhrase}}</p>
+          </li>
+        {{/each}}
+      </ul>
+  </div>
+
+  <div class="delete-button">
+    <form action="/movies/{{movie._id}}/delete" method="post">
+      <button type="submit">delete {{movie.title}}</button>
+    </form>
+  </div>
+
+  <div class="edit-button">
+    <a href="/movies/{{movie._id}}/edit"><button>edit {{movie.title}}</button></a>
+  </div>
+
+  <div class="links">
+    <a href="/">Back home</a>
+    <a href="/movies">Back to movies list</a>
+  </div>
+
+
+</section>

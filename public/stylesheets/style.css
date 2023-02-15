@@ -6,3 +6,25 @@ body {
 a {
   color: #00b7ff;
 }
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.celebrities {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div {
+  gap: 0.5rem;
+}

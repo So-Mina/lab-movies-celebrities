@@ -1,0 +1,20 @@
+<section>
+  <h2>Celebrities</h2>
+
+  {{#each celebrities}}
+
+    <div class='card'>
+      <p>{{name}}</p>
+        <hr>
+      <p>{{occupation}}</p>
+      <p>{{catchPhrase}}</p>
+    </div>
+
+  {{/each}}
+
+  <div class="links">
+    <a href="/">Back home</a>
+    <a href="/celebrities/create">Add new celebrity</a>
+  </div>
+
+</section>
